@@ -1,7 +1,7 @@
 'use client';
 
+import { Icon } from '@/components/iconify-icon';
 import { links } from '@/lib/constants/links';
-import { Icon } from '@iconify/react/dist/iconify.js';
 import { Button } from '@nextui-org/button';
 import { Link } from '@nextui-org/link';
 import { cn } from '@nextui-org/theme';

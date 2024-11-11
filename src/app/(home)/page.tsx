@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { FeatureSection } from './_section/features';
 import { OverviewSection } from './_section/overview';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <FeatureSection />
     </div>
   );
 }

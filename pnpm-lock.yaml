@@ -48,9 +48,9 @@ importers:
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
-      '@iconify/react':
-        specifier: ^5.0.2
-        version: 5.0.2(react@18.3.1)
+      '@iconify-icon/react':
+        specifier: ^2.1.0
+        version: 2.1.0(react@18.3.1)
       '@types/node':
         specifier: ^20.17.6
         version: 20.17.6
@@ -144,8 +144,8 @@ packages:
   '@formatjs/intl-localematcher@0.5.7':
     resolution: {integrity: sha512-GGFtfHGQVFe/niOZp24Kal5b2i36eE2bNL0xi9Sg/yd0TR8aLjcteApZdHmismP5QQax1cMnZM9yWySUUjJteA==}
 
-  '@iconify/react@5.0.2':
-    resolution: {integrity: sha512-wtmstbYlEbo4NDxFxBJkhkf9gJBDqMGr7FaqLrAUMneRV3Z+fVHLJjOhWbkAF8xDQNFC/wcTYdrWo1lnRhmagQ==}
+  '@iconify-icon/react@2.1.0':
+    resolution: {integrity: sha512-OuEsW5Y474rg3WlseLFQ0uuJjnyk1DhLN1Ire5JGjF4sF8/rNxGJDLSItEogRcKuUbL+zzuoBsaTUVVInuixRA==}
     peerDependencies:
       react: '>=16'
 
@@ -733,6 +733,9 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
+  iconify-icon@2.1.0:
+    resolution: {integrity: sha512-lto4XU3bwTQnb+D/CsJ4dWAo0aDe+uPMxEtxyOodw9l7R9QnJUUab3GCehlw2M8mDHdeUu/ufx8PvRQiJphhXg==}
+
   intl-messageformat@10.7.4:
     resolution: {integrity: sha512-D4wGk8/XAp/5YMLtTXR+BUyGeSl4+28N43cwXXmIGQ8Tt+STA/oUsz9KUerzgiwBlJ+2dRDsQ3qQvvlVF6jzFA==}
 
@@ -1219,9 +1222,9 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@iconify/react@5.0.2(react@18.3.1)':
+  '@iconify-icon/react@2.1.0(react@18.3.1)':
     dependencies:
-      '@iconify/types': 2.0.0
+      iconify-icon: 2.1.0
       react: 18.3.1
 
   '@iconify/types@2.0.0': {}
@@ -1901,6 +1904,10 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+
+  iconify-icon@2.1.0:
+    dependencies:
+      '@iconify/types': 2.0.0
 
   intl-messageformat@10.7.4:
     dependencies:
