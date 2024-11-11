@@ -1,6 +1,6 @@
 import { Logo } from '@/components/logo';
 import { links } from '@/lib/constants/links';
-import { Icon } from '@iconify/react';
+import { Icon } from '@iconify-icon/react';
 import { Button } from '@nextui-org/button';
 import { Link } from '@nextui-org/link';
 import { NavbarBrand, NavbarContent, NavbarItem, Navbar as NextUINavbar } from '@nextui-org/navbar';
