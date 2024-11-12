@@ -14,6 +14,7 @@ export default function Home() {
             width={1270}
             height={720}
             alt=''
+            priority
           />
         </div>
       </div>

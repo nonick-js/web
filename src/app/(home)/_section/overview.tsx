@@ -39,7 +39,8 @@ export function OverviewSection({ className, ...props }: HTMLAttributes<HTMLDivE
         <Button
           as={Link}
           href={links.invite}
-          startContent={<Icon icon='solar:add-circle-bold' className='text-[20px]' />}
+          startContent={<Icon icon='solar:add-circle-bold' className='text-[24px]' />}
+          size='lg'
           isExternal
         >
           サーバーに追加
@@ -48,7 +49,8 @@ export function OverviewSection({ className, ...props }: HTMLAttributes<HTMLDivE
           as={Link}
           href={links.dashboard}
           color='primary'
-          startContent={<Icon icon='solar:settings-bold' className='text-[20px]' />}
+          startContent={<Icon icon='solar:settings-bold' className='text-[24px]' />}
+          size='lg'
           isExternal
         >
           ダッシュボード
