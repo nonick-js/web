@@ -17,7 +17,7 @@ export function ReturnTopButton() {
   }, []);
 
   const scrollWindow = () => {
-    const top = 1000;
+    const top = 500;
     const bottomOffset = 100;
     const scrollPosition = window.scrollY;
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
