@@ -122,7 +122,7 @@ function Feature({ className, title, description, href, imageSrc, ...props }: Fe
         </Button>
       </div>
       <Image
-        className='rounded-medium shadow-md md:max-w-lg pointer-events-none'
+        className='rounded-medium shadow-md md:max-w-sm lg:max-w-lg pointer-events-none'
         src={imageSrc}
         alt={`${title}のイメージ画像`}
         width={1280}
@@ -143,7 +143,7 @@ function FeatureCard({ icon, title, description, className, ...props }: FeatureC
   return (
     <Card
       as={NextLink}
-      className={cn('flex flex-col gap-3 col-span-12 sm:col-span-6 md:col-span-3 p-6', className)}
+      className={cn('flex flex-col gap-3 col-span-12 md:col-span-6 lg:col-span-3 p-6', className)}
       isHoverable
       isPressable
       {...props}
