@@ -4,6 +4,7 @@ import { Icon } from '@iconify-icon/react';
 import { Button } from '@nextui-org/button';
 import { Link } from '@nextui-org/link';
 import { NavbarBrand, NavbarContent, NavbarItem, Navbar as NextUINavbar } from '@nextui-org/navbar';
+import { Tooltip } from '@nextui-org/tooltip';
 
 export function Navbar() {
   return (
@@ -11,23 +12,48 @@ export function Navbar() {
       <NavbarBrand>
         <Logo height={18} />
       </NavbarBrand>
-      <NavbarContent justify='end'>
+      <NavbarContent justify='end' className='max-sm:gap-2'>
         <NavbarItem>
           <div className='flex items-center gap-1'>
-            <Button as={Link} href={links.docs} variant='light' isExternal isIconOnly>
-              <Icon
-                icon='solar:book-bookmark-minimalistic-bold'
-                className='text-[24px] text-default-500'
-              />
-            </Button>
-            <Button as={Link} href={links.discord} variant='light' isExternal isIconOnly>
-              <Icon icon='akar-icons:discord-fill' className='text-[24px] text-default-500' />
-            </Button>
+            <Tooltip content='ドキュメント' placement='bottom' delay={500}>
+              <Button
+                as={Link}
+                aria-label='ドキュメント'
+                href={links.docs}
+                variant='light'
+                isExternal
+                isIconOnly
+              >
+                <Icon
+                  icon='solar:book-bookmark-minimalistic-bold'
+                  className='text-[24px] text-default-500'
+                />
+              </Button>
+            </Tooltip>
+            <Tooltip content='サポートサーバー' placement='bottom' delay={500}>
+              <Button
+                as={Link}
+                aria-label='サポートサーバー'
+                href={links.discord}
+                variant='light'
+                isExternal
+                isIconOnly
+              >
+                <Icon icon='akar-icons:discord-fill' className='text-[24px] text-default-500' />
+              </Button>
+            </Tooltip>
           </div>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} href={links.dashboard} color='primary' isExternal>
-            ダッシュボード
+          <Button
+            as={Link}
+            href={links.dashboard}
+            color='primary'
+            className='max-sm:min-w-10'
+            startContent={<Icon icon='solar:settings-bold' className='sm:hidden text-[24px]' />}
+            isExternal
+          >
+            <span className='max-sm:hidden'>ダッシュボード</span>
           </Button>
         </NavbarItem>
       </NavbarContent>

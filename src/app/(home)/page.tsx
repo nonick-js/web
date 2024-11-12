@@ -6,7 +6,7 @@ import { ReviewSection } from './_section/review';
 export default function Home() {
   return (
     <>
-      <div className='container flex flex-col gap-32'>
+      <div className='container flex flex-col gap-16 md:gap-32'>
         <div className='flex flex-col gap-12'>
           <OverviewSection className='pt-8' />
           <div className='max-w-6xl mx-auto'>

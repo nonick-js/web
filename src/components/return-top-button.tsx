@@ -1,5 +1,6 @@
 'use client';
 
+import 'scroll-behavior-polyfill';
 import { Button } from '@nextui-org/button';
 import { cn } from '@nextui-org/theme';
 import React, { useEffect } from 'react';
