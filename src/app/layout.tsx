@@ -1,4 +1,4 @@
-import './globals.css';
+import '@/app/globals.css';
 import type { Metadata, Viewport } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
 import { Provider } from './provider';
