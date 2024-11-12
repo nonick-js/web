@@ -1,5 +1,5 @@
 import './globals.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
 import { Provider } from './provider';
 
@@ -12,7 +12,12 @@ export const metadata: Metadata = {
     default: 'NoNICK.js',
     template: '%s - NoNICK.js',
   },
+  metadataBase: new URL('https://nonick-js.com'),
   description: 'あなたのDiscordサーバーをもっと便利に。',
+};
+
+export const veiwport: Viewport = {
+  themeColor: '#0073f5',
 };
 
 export default function RootLayout({
