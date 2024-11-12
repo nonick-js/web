@@ -1,3 +1,4 @@
+import { CopyrightSection } from '@/components/copyright-section';
 import Image from 'next/image';
 import { FeatureSection } from './_section/features';
 import { OverviewSection } from './_section/overview';
@@ -22,9 +23,7 @@ export default function Home() {
         </div>
         <FeatureSection />
         <ReviewSection />
-        <div className='text-center text-default-500'>
-          © NoNICK.js 2021-2024 All Rights Reserved.
-        </div>
+        <CopyrightSection />
       </div>
     </>
   );

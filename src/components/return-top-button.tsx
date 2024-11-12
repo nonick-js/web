@@ -18,8 +18,11 @@ export function ReturnTopButton() {
 
   const scrollWindow = () => {
     const top = 1000;
+    const bottomOffset = 100;
+    const scrollPosition = window.scrollY;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-    if (top <= window.scrollY) {
+    if (top <= scrollPosition && scrollPosition < maxScroll - bottomOffset) {
       setIsActive(true);
     } else {
       setIsActive(false);

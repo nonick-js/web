@@ -1,4 +1,5 @@
 import { nextui } from '@nextui-org/theme';
+import typography from '@tailwindcss/typography';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -6,7 +7,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(button|card|link|navbar|popover|ripple|spinner).js"
+    "./node_modules/@nextui-org/theme/dist/components/(button|card|divider|link|navbar|popover|ripple|spinner).js"
   ],
   theme: {
     container: {
@@ -18,6 +19,6 @@ const config: Config = {
     },
   },
   darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [nextui(), typography],
 };
 export default config;

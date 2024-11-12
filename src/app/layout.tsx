@@ -8,7 +8,10 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: 'NoNICK.js',
+  title: {
+    default: 'NoNICK.js',
+    template: '%s - NoNICK.js',
+  },
   description: 'あなたのDiscordサーバーをもっと便利に。',
 };
 

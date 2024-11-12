@@ -5,11 +5,12 @@ import { Button } from '@nextui-org/button';
 import { Link } from '@nextui-org/link';
 import { NavbarBrand, NavbarContent, NavbarItem, Navbar as NextUINavbar } from '@nextui-org/navbar';
 import { Tooltip } from '@nextui-org/tooltip';
+import NextLink from 'next/link';
 
 export function Navbar() {
   return (
     <NextUINavbar maxWidth='xl' className='h-20'>
-      <NavbarBrand>
+      <NavbarBrand as={NextLink} href='/'>
         <Logo height={18} />
       </NavbarBrand>
       <NavbarContent justify='end' className='max-sm:gap-2'>
