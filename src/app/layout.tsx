@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'あなたのDiscordサーバーをもっと便利に。',
 };
 
-export const veiwport: Viewport = {
+export const viewport: Viewport = {
   themeColor: '#0073f5',
 };
 
