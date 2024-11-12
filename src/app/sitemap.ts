@@ -3,15 +3,15 @@ import type { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://acme.com',
+      url: 'https://nonick-js.com',
       lastModified: new Date(),
     },
     {
-      url: 'https://acme.com/tos',
+      url: 'https://nonick-js.com/tos',
       lastModified: new Date(),
     },
     {
-      url: 'https://acme.com/privacy-policy',
+      url: 'https://nonick-js.com/privacy-policy',
       lastModified: new Date(),
     },
   ];
