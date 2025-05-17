@@ -4,10 +4,10 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/(button|card|divider|link|navbar|popover|ripple|spinner).js"
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@nextui-org/theme/dist/components/(button|card|divider|link|navbar|popover|ripple|spinner).js',
   ],
   theme: {
     container: {
@@ -19,6 +19,17 @@ const config: Config = {
     },
   },
   darkMode: 'class',
-  plugins: [nextui(), typography],
+  plugins: [
+    nextui({
+      themes: {
+        dark: {
+          colors: {
+            background: '#121212',
+          },
+        },
+      },
+    }),
+    typography,
+  ],
 };
 export default config;
